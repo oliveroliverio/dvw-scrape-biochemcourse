@@ -69,17 +69,20 @@ async function clearCookies(page, cookieNames = []) {
 async function run() {
     const browser = await puppeteer.launch({ headless: false });
     const page = await browser.newPage();
-    await page.goto('https://learning.edx.org/course/course-v1:HarvardX+MCB63X+1T2024c/home');
+    await page.goto('https://books.toscrape.com/');
 
+    // output html to console
+    const html = await page.content();
+    console.log(html);
 
-    const cookiesSaved = await saveCookiesToFile(page, 'cookies.json');
-    if (cookiesSaved) {
-        console.log('Cookies saved successfully.');
-    } else {
-        console.log('Failed to save cookies.');
-    }
+    // const cookiesSaved = await saveCookiesToFile(page, 'cookies.json');
+    // if (cookiesSaved) {
+    //     console.log('Cookies saved successfully.');
+    // } else {
+    //     console.log('Failed to save cookies.');
+    // }
 
-    await browser.close();
+    // await browser.close();
 }
 
 run();

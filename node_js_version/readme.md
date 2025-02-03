@@ -14,6 +14,11 @@
 
 
 
+--- 
+# resources
+- [books to scrape](https://books.toscrape.com/)
+- cookie management in puppeteer: https://www.webshare.io/academy-article/puppeteer-cookies
+- pretty-printing in bs4: https://www.geeksforgeeks.org/pretty-printing-in-beautifulsoup/
 
 
 
