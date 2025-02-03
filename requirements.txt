@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+seaborn
+ipykernel
+jinja2
+pytest-playwright
+pyppeteer
+python-dotenv
+selenium
+beautifulsoup4
+webdriver_manager
